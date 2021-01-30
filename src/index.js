@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Router, View} from "react-navi";
+import {routes} from "./routes";
+import './styles/styles.scss'
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router routes={routes}>
+        <App/>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
