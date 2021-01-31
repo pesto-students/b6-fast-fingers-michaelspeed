@@ -32,14 +32,13 @@ export const gameScoreSchema = {
             type: 'string'
         },
         scores: {
-            type: 'integer'
+            type: 'string'
         },
         createdAt: {
-            type: 'integer'
+            type: 'string'
         }
     },
     indexes: [
-        'id', 'name'
-    ],
-    required: ['name']
+        'id', 'name', 'scores'
+    ]
 }

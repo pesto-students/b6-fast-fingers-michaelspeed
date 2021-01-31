@@ -39,7 +39,7 @@ export const _loadDb = async () => {
     })
     await Promise.all(collections.map(colData => dbPromise.collection(colData)))
     dbPromise.collections.games.preSave((plainData, rxDoc) => {
-        plainData.createdAt = moment().unix;
+        plainData.createdAt = moment().unix();
         plainData.id = nanoid()
     })
     dbPromise.collections.players.preSave((plainData, rxDoc) => {

@@ -19,7 +19,7 @@ export const routes = compose(
             let key = request.params.key;
             return {
                 title: 'Game',
-                view: <Game id={id} key={key}/>
+                view: <Game id={id} difficulty={key}/>
             }
         })
     })

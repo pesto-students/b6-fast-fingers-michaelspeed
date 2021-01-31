@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^5.0.0-beta1",
+    "clsx": "^1.1.1",
     "moment": "^2.29.1",
     "nanoid": "^3.1.20",
     "navi": "^0.14.0",
@@ -18,7 +19,8 @@
     "react-navi": "^0.14.4",
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
-    "rxdb": "^9.12.1"
+    "rxdb": "^9.12.1",
+    "rxjs": "^6.6.3"
   },
   "scripts": {
     "start": "react-scripts start",

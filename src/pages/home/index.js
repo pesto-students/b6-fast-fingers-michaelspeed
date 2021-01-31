@@ -39,6 +39,10 @@ function HomePage(props) {
         }
     }, [])
 
+    /**
+     *
+     * @return {Promise<void>}
+     */
     const onClickCreatePlayerWithGame = async () => {
         if (selected) {
             navig.navigate(`/game/${selected}/${key}`)

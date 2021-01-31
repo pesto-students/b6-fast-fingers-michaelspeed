@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -9,9 +9,11 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router routes={routes}>
-        <App/>
-    </Router>
+      <Suspense fallback={null}>
+          <Router routes={routes}>
+              <App/>
+          </Router>
+      </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
