@@ -1,13 +1,14 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 import * as PropTypes from "prop-types";
 import {getDb} from "../../services";
-import Profile from "../../Components/Profile/Profile";
-import PlayConsole from "../../Components/PlayConsole/PlayConsole";
 import playStore from "../../services/PlayStore";
 import {nanoid} from "nanoid";
 import moment from "moment";
-import Score from "../../Components/Score/Score";
 import {useNavigation} from "react-navi";
+
+const Score = React.lazy(() => import("../../Components/Score/Score"));
+const Profile = React.lazy(() => import("../../Components/Profile/Profile"));
+const PlayConsole = React.lazy(() => import("../../Components/PlayConsole/PlayConsole"));
 
 function Game(props) {
 
@@ -59,6 +60,7 @@ function Game(props) {
         return () => {
             subs.forEach(supscriber => supscriber.unsubscribe())
         }
+        // eslint-disable-next-line
     }, [])
 
     useEffect(() => {
@@ -67,7 +69,7 @@ function Game(props) {
             const gameScore = {
                 id: nanoid(),
                 name: props.id,
-                scores: pStore.currentScore.toString(),
+                scores: pStore.currentScore,
                 createdAt: moment().unix().toString(),
             }
             db.games.insert(gameScore)
@@ -75,6 +77,7 @@ function Game(props) {
         if (pStore.finish) {
             saveData()
         }
+        // eslint-disable-next-line
     }, [pStore.finish])
 
     return (

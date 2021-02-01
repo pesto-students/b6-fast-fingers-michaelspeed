@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import useScripts from "../../libs/hooks/useScripts";
-import Spacer from "../../Components/Spacer/Spacer";
-import SegmentControls from "../../Components/SegmentControls/SegmentControls";
 import {getDb} from "../../services";
 import {nanoid} from "nanoid";
 import {useNavigation} from "react-navi";
-import Profile from "../../Components/Profile/Profile";
+
+const Profile = React.lazy(() => import("../../Components/Profile/Profile"));
+const Spacer = React.lazy(() => import("../../Components/Spacer/Spacer"));
+const SegmentControls = React.lazy(() => import("../../Components/SegmentControls/SegmentControls"));
 
 function HomePage(props) {
 

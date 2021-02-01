@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './PlayConsole.css'
-import PlayConsoleInput from "./PlayConsoleInput";
 import playStore from "../../services/PlayStore";
+
+const PlayConsoleInput = React.lazy(() =>import("./PlayConsoleInput"));
 
 function PlayConsole(props) {
 
@@ -29,8 +30,9 @@ function PlayConsole(props) {
                 </div>
                 <div style={{display:"flex", justifyContent:"center",alignItems: "center", marginTop: 20}}>
                     <button className="btn btn-primary" onClick={() => {
-                        playStore.resetGame()
-                        playStore.setCurrentWord()
+                        window.location.reload()
+                        /*playStore.resetGame()
+                        playStore.setCurrentWord()*/
                     }}>
                         <i className="fas fa-redo-alt"></i> Start Again
                     </button>
