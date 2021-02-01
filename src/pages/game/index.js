@@ -7,12 +7,14 @@ import playStore from "../../services/PlayStore";
 import {nanoid} from "nanoid";
 import moment from "moment";
 import Score from "../../Components/Score/Score";
+import {useNavigation} from "react-navi";
 
 function Game(props) {
 
     const [player, setPlayer] = useState(null)
     const [difficulty, setDifficulty] = useState(null)
     const [pStore, setPStore] = useState(playStore.initialState)
+    const navig = useNavigation()
 
     useLayoutEffect(() => {
         const sub = playStore.subscribe(setPStore)
@@ -29,6 +31,10 @@ function Game(props) {
                     id: props.id
                 },
             }).$.subscribe(currentPlayer => {
+                if (currentPlayer === null) {
+                    navig.navigate('/')
+                    players.unsubscribe()
+                }
                 setPlayer(currentPlayer)
                 let diff
                 playStore.updateDifficulty(Number(props.difficulty))
@@ -53,7 +59,6 @@ function Game(props) {
         return () => {
             subs.forEach(supscriber => supscriber.unsubscribe())
         }
-        // eslint-disable-next-line
     }, [])
 
     useEffect(() => {
@@ -70,7 +75,6 @@ function Game(props) {
         if (pStore.finish) {
             saveData()
         }
-        // eslint-disable-next-line
     }, [pStore.finish])
 
     return (

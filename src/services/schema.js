@@ -32,7 +32,7 @@ export const gameScoreSchema = {
             type: 'string'
         },
         scores: {
-            type: 'string'
+            type: 'integer'
         },
         createdAt: {
             type: 'string'

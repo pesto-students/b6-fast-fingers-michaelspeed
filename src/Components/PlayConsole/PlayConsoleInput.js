@@ -37,7 +37,6 @@ function PlayConsoleInput(props) {
             setText('')
             playStore.checkNewWord(pStore.currentWord);
         }
-        // eslint-disable-next-line
     }, [text])
 
 
