@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import useScripts from "../../libs/hooks/useScripts";
 import Spacer from "../../Components/Spacer/Spacer";
 import SegmentControls from "../../Components/SegmentControls/SegmentControls";
 import {getDb} from "../../services";

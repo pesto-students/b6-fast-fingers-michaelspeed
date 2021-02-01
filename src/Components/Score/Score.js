@@ -17,7 +17,7 @@ function Scores(props) {
                     name: props.id
                 },
                 sort: [
-                    { scores: 'asc' }
+                    { scores: 'desc' }
                 ],
                 limit: 10
             }).$.subscribe(allScores => {

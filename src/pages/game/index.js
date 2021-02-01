@@ -59,6 +59,7 @@ function Game(props) {
         return () => {
             subs.forEach(supscriber => supscriber.unsubscribe())
         }
+        // eslint-disable-next-line
     }, [])
 
     useEffect(() => {
@@ -67,7 +68,7 @@ function Game(props) {
             const gameScore = {
                 id: nanoid(),
                 name: props.id,
-                scores: pStore.currentScore.toString(),
+                scores: pStore.currentScore,
                 createdAt: moment().unix().toString(),
             }
             db.games.insert(gameScore)
@@ -75,6 +76,7 @@ function Game(props) {
         if (pStore.finish) {
             saveData()
         }
+        // eslint-disable-next-line
     }, [pStore.finish])
 
     return (

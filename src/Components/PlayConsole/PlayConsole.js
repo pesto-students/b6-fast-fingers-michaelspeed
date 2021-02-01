@@ -29,8 +29,9 @@ function PlayConsole(props) {
                 </div>
                 <div style={{display:"flex", justifyContent:"center",alignItems: "center", marginTop: 20}}>
                     <button className="btn btn-primary" onClick={() => {
-                        playStore.resetGame()
-                        playStore.setCurrentWord()
+                        window.location.reload()
+                        /*playStore.resetGame()
+                        playStore.setCurrentWord()*/
                     }}>
                         <i className="fas fa-redo-alt"></i> Start Again
                     </button>

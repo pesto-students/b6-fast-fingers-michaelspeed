@@ -10,8 +10,8 @@ function Profile(props) {
 
     if(props.expanded) {
         return (
-            <div style={{ border: '1px solid #ff5155', padding: 10}}>
-                <div style={{margin: 5, borderRadius: 6, cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", minWidth: 250}}>
+            <div style={{ border: '1px solid #ff5155', padding: 10, margin: 5, borderRadius: 6,}}>
+                <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", minWidth: 250}}>
                     <div style={{display: "flex", justifyContent: "center", flexDirection: 'row'}}>
                         <i className="far fa-user-circle text-primary" style={{fontSize: 40}}></i>
                     </div>
