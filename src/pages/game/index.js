@@ -1,13 +1,14 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 import * as PropTypes from "prop-types";
 import {getDb} from "../../services";
-import Profile from "../../Components/Profile/Profile";
-import PlayConsole from "../../Components/PlayConsole/PlayConsole";
 import playStore from "../../services/PlayStore";
 import {nanoid} from "nanoid";
 import moment from "moment";
-import Score from "../../Components/Score/Score";
 import {useNavigation} from "react-navi";
+
+const Score = React.lazy(() => import("../../Components/Score/Score"));
+const Profile = React.lazy(() => import("../../Components/Profile/Profile"));
+const PlayConsole = React.lazy(() => import("../../Components/PlayConsole/PlayConsole"));
 
 function Game(props) {
 
