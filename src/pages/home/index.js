@@ -9,7 +9,8 @@ import Profile from "../../Components/Profile/Profile";
 
 function HomePage(props) {
 
-    useScripts('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js')
+    // use this if need to use jquery for bootstrap
+    // useScripts('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js')
 
     const navig = useNavigation()
     const [name, setName] = useState('')
