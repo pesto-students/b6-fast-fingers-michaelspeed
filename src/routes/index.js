@@ -3,8 +3,8 @@ import React from 'react';
 import HomePage from "../pages/home";
 import MainLayout from "../layouts/MainLayout";
 import {View} from "react-navi";
+import Game from "../pages/game";
 
-const Game = React.lazy(() => import("../pages/game"));
 
 export const routes = compose(
     withView((request, context, args) => <MainLayout>
