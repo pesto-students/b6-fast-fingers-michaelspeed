@@ -1,6 +1,6 @@
 import {Subject, timer} from "rxjs";
 import data from '../data/dictionary.json'
-import {map, takeWhile, tap} from "rxjs/operators";
+import {map, takeWhile} from "rxjs/operators";
 
 const subject = new Subject();
 
@@ -22,6 +22,7 @@ const initialState = {
 
 let state = initialState;
 
+// eslint-disable-next-line no-unused-vars
 let timerSubs
 
 const playStore = {

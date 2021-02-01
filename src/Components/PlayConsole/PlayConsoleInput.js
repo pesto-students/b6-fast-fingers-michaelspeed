@@ -20,7 +20,7 @@ function PlayConsoleInput(props) {
             playStore.startCounter()
         }
         setErrorText([])
-        for (const [index, textChar] of text.split('').entries()) {
+        for (const [index] of text.split('').entries()) {
             const currentChar = pStore.currentWord.charAt(index)
             if (text.charAt(index).toLowerCase() !== currentChar.toLowerCase()) {
                 if (!errorText.includes(index)) {
@@ -37,6 +37,7 @@ function PlayConsoleInput(props) {
             setText('')
             playStore.checkNewWord(pStore.currentWord);
         }
+        // eslint-disable-next-line
     }, [text])
 
 

@@ -53,6 +53,7 @@ function Game(props) {
         return () => {
             subs.forEach(supscriber => supscriber.unsubscribe())
         }
+        // eslint-disable-next-line
     }, [])
 
     useEffect(() => {
@@ -69,6 +70,7 @@ function Game(props) {
         if (pStore.finish) {
             saveData()
         }
+        // eslint-disable-next-line
     }, [pStore.finish])
 
     return (

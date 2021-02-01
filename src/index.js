@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import {Router, View} from "react-navi";
+import {Router} from "react-navi";
 import {routes} from "./routes";
 import './styles/styles.scss'
 import App from "./App";
