@@ -5,10 +5,10 @@ import playStore from "../../services/PlayStore";
 import {nanoid} from "nanoid";
 import moment from "moment";
 import {useNavigation} from "react-navi";
+import PlayConsole from "../../Components/PlayConsole/PlayConsole";
 
 const Score = React.lazy(() => import("../../Components/Score/Score"));
 const Profile = React.lazy(() => import("../../Components/Profile/Profile"));
-const PlayConsole = React.lazy(() => import("../../Components/PlayConsole/PlayConsole"));
 
 function Game(props) {
 
