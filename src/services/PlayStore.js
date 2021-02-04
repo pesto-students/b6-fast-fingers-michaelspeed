@@ -17,7 +17,8 @@ const initialState = {
     attempts: 0,
     loader: 250,
     currentScore: 0,
-    finish: false
+    finish: false,
+    dark: false
 }
 
 let state = initialState;
@@ -170,6 +171,13 @@ const playStore = {
             attempts: 0,
         }
         subject.next(state);
+    },
+    triggerTheme: () => {
+      state = {
+          ...state,
+          dark: !state.dark
+      }
+      subject.next(state)
     },
     initialState
 }

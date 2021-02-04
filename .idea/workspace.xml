@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="more fixes">
-      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.js" afterDir="false" />
+    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="more fixes with lazy load">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PlayStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PlayStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,8 @@
       <workItem from="1612196797358" duration="1779000" />
       <workItem from="1612265865857" duration="108000" />
       <workItem from="1612268423689" duration="96000" />
-      <workItem from="1612440224096" duration="2438000" />
+      <workItem from="1612440224096" duration="5331000" />
+      <workItem from="1612449645953" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="finished the home page, moving to more logical views">
       <created>1612005781080</created>
@@ -174,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612443071507</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="more fixes with lazy load">
+      <created>1612443531853</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612443531853</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +221,7 @@
     <MESSAGE value="fixed display of word on initial screen" />
     <MESSAGE value="more test" />
     <MESSAGE value="more fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="more fixes" />
+    <MESSAGE value="more fixes with lazy load" />
+    <option name="LAST_COMMIT_MESSAGE" value="more fixes with lazy load" />
   </component>
 </project>

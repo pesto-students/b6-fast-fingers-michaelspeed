@@ -46,8 +46,6 @@ function PlayConsoleInput(props) {
         <div>
             <div style={{display: "flex",justifyContent: "center", alignItems: "center"}}>
                 {pStore.currentWord.split('').map((character, index) => {
-                    console.log(pStore)
-                    console.log(index)
                     return (
                         <h1 className={clsx({
                             'text-uppercase font-weight-bold': true,

@@ -14,6 +14,7 @@ function HomePage(props) {
 
     const navig = useNavigation()
     const [name, setName] = useState('')
+    const [buttonText, setButtonText] = useState('Start Game')
     const [key, setKey] = useState(0)
     const [player, setPlayer] = useState([])
     const [selected, setSelected] = useState(null);
@@ -45,17 +46,24 @@ function HomePage(props) {
      * @return {Promise<void>}
      */
     const onClickCreatePlayerWithGame = async () => {
-        if (selected) {
-            navig.navigate(`/game/${selected}/${key}`)
+        if (selected === null && name === '') {
+            setButtonText('Please enter your name, or select a player')
+            setTimeout(() => {
+                setButtonText('Start Game')
+            }, 4000)
         } else {
-            const db = await getDb()
-            const newPlayer = {
-                name,
-                id: nanoid()
+            if (selected) {
+                navig.navigate(`/game/${selected}/${key}`)
+            } else {
+                const db = await getDb()
+                const newPlayer = {
+                    name,
+                    id: nanoid()
+                }
+                db.players.insert(newPlayer).then(value => {
+                    navig.navigate(`/game/${value.id}/${key}`)
+                })
             }
-            db.players.insert(newPlayer).then(value => {
-                navig.navigate(`/game/${value.id}/${key}`)
-            })
         }
     }
 
@@ -126,7 +134,7 @@ function HomePage(props) {
             </div>
             <Spacer height={50}/>
             <div style={{display: "flex", flexDirection: 'row', justifyContent: 'center'}}>
-                <button className="btn btn-primary" onClick={onClickCreatePlayerWithGame}>Start Game</button>
+                <button className="btn btn-primary" onClick={onClickCreatePlayerWithGame}>{buttonText}</button>
             </div>
 
         </div>
