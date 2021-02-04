@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './PlayConsole.css'
 import playStore from "../../services/PlayStore";
-
-const PlayConsoleInput = React.lazy(() =>import("./PlayConsoleInput"));
+import PlayConsoleInput from "./PlayConsoleInput";
 
 function PlayConsole(props) {
 
