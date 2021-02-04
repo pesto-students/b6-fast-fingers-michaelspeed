@@ -80,8 +80,6 @@ function Game(props) {
         // eslint-disable-next-line
     }, [pStore.finish])
 
-    console.log(pStore)
-
     return (
         <div style={{padding: 24}}>
             <div className='row'>
