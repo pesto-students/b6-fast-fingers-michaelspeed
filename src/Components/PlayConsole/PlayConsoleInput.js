@@ -10,6 +10,7 @@ function PlayConsoleInput(props) {
 
     useEffect(() => {
         const sub = playStore.subscribe(setPStore)
+        playStore.init();
         return () => {
             return sub.unsubscribe()
         }
