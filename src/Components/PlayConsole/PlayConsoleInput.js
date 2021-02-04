@@ -10,6 +10,7 @@ function PlayConsoleInput(props) {
 
     useEffect(() => {
         const sub = playStore.subscribe(setPStore)
+        playStore.init();
         return () => {
             return sub.unsubscribe()
         }
@@ -44,14 +45,18 @@ function PlayConsoleInput(props) {
     return (
         <div>
             <div style={{display: "flex",justifyContent: "center", alignItems: "center"}}>
-                {pStore.currentWord.split('').map((character, index) => (
-                    <h1 className={clsx({
-                        'text-uppercase font-weight-bold': true,
-                        'text-white': text.length <= index,
-                        'text-primary': text.length > index && errorText.includes(index),
-                        'text-info': text.length > index && !errorText.includes(index)
-                    })} key={index}>{character}</h1>
-                ))}
+                {pStore.currentWord.split('').map((character, index) => {
+                    console.log(pStore)
+                    console.log(index)
+                    return (
+                        <h1 className={clsx({
+                            'text-uppercase font-weight-bold': true,
+                            'text-white': text.length <= index,
+                            'text-primary': text.length > index && errorText.includes(index),
+                            'text-info': text.length > index && !errorText.includes(index)
+                        })} key={index}>{character}</h1>
+                    )
+                })}
             </div>
             <input type="text" className="form-control"
                    value={text}

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="fixed jest with react issue shelve issue">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="more fixes">
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,9 @@
       <workItem from="1612192456279" duration="3198000" />
       <workItem from="1612196766884" duration="29000" />
       <workItem from="1612196797358" duration="1779000" />
-      <workItem from="1612265865857" duration="81000" />
+      <workItem from="1612265865857" duration="108000" />
+      <workItem from="1612268423689" duration="96000" />
+      <workItem from="1612440224096" duration="2438000" />
     </task>
     <task id="LOCAL-00001" summary="finished the home page, moving to more logical views">
       <created>1612005781080</created>
@@ -145,7 +146,35 @@
       <option name="project" value="LOCAL" />
       <updated>1612203083038</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="demo url added">
+      <created>1612265962759</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612265962759</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed display of word on initial screen">
+      <created>1612441167409</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612441167409</updated>
+    </task>
+    <task id="LOCAL-00013" summary="more test">
+      <created>1612441688107</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612441688107</updated>
+    </task>
+    <task id="LOCAL-00014" summary="more fixes">
+      <created>1612443071507</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612443071507</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +205,10 @@
     <MESSAGE value="new changes" />
     <MESSAGE value="fixed jest with react issue" />
     <MESSAGE value="fixed jest with react issue shelve issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed jest with react issue shelve issue" />
+    <MESSAGE value="demo url added" />
+    <MESSAGE value="fixed display of word on initial screen" />
+    <MESSAGE value="more test" />
+    <MESSAGE value="more fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="more fixes" />
   </component>
 </project>
