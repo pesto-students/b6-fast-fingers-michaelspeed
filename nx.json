@@ -15,5 +15,10 @@
       "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
-  "projects": { "fingers-server": { "tags": [] } }
+  "projects": {
+    "fingers-server": { "tags": [] },
+    "entities": { "tags": [] },
+    "fast-fingers": { "tags": [] },
+    "fast-fingers-e2e": { "tags": [], "implicitDependencies": ["fast-fingers"] }
+  }
 }
