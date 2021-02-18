@@ -1,12 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="more fixes with lazy load">
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/api/api.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/api/controller/user/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/api/controller/words/words.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/app.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/app.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/database/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/database/scores/scores.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/database/user/user.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/database/words/words.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/services/scores/scores.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/services/services.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/services/user/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/services/words/words.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.preset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nx.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/generators/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/tsconfig.tools.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PlayStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PlayStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dictionary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-mocks/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/_redirects" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bg/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bg/bg1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bg/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bg/bg2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/dictionary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsole.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Score/Score.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SegmentControls/SegmentControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SegmentControls/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/api/controller/scores/scores.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Spacer/Spacer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dictionary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/hooks/useScripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/game/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PlayStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,15 +103,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ncpJXt2Vw399OhlocsP09Yc1Ce" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1oduqOLKJI9LpNiMaTdNzjWqKeu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -31,162 +115,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public/data" />
-      <recent name="$PROJECT_DIR$/public/bg" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="" />
-      <created>1611699163436</created>
+      <changelist id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="" />
+      <created>1613628980833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611699163436</updated>
-      <workItem from="1611699167015" duration="819000" />
-      <workItem from="1611741130737" duration="11299000" />
-      <workItem from="1611850834696" duration="54000" />
-      <workItem from="1611950225280" duration="1250000" />
-      <workItem from="1611990835439" duration="9906000" />
-      <workItem from="1612020235802" duration="15172000" />
-      <workItem from="1612075401589" duration="16772000" />
-      <workItem from="1612116928915" duration="5537000" />
-      <workItem from="1612162605486" duration="4954000" />
-      <workItem from="1612186334829" duration="3066000" />
-      <workItem from="1612192456279" duration="3198000" />
-      <workItem from="1612196766884" duration="29000" />
-      <workItem from="1612196797358" duration="1779000" />
-      <workItem from="1612265865857" duration="108000" />
-      <workItem from="1612268423689" duration="96000" />
-      <workItem from="1612440224096" duration="5331000" />
-      <workItem from="1612449645953" duration="649000" />
+      <updated>1613628980833</updated>
+      <workItem from="1613628984206" duration="4828000" />
     </task>
-    <task id="LOCAL-00001" summary="finished the home page, moving to more logical views">
-      <created>1612005781080</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612005781080</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added more functionality">
-      <created>1612126279214</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1612126279214</updated>
-    </task>
-    <task id="LOCAL-00003" summary="removed warnings">
-      <created>1612167396977</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1612167396977</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added new difficulty changes">
-      <created>1612190057155</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1612190057155</updated>
-    </task>
-    <task id="LOCAL-00005" summary="removed jquery bootstrap">
-      <created>1612190126325</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1612190126325</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fixed eslit for dependencies">
-      <created>1612194503192</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1612194503192</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added code splitting">
-      <created>1612196489717</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1612196489717</updated>
-    </task>
-    <task id="LOCAL-00008" summary="commit code checker">
-      <created>1612196864805</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1612196864805</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fixed jest with react issue">
-      <created>1612202039982</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1612202039982</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fixed jest with react issue shelve issue">
-      <created>1612203083038</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1612203083038</updated>
-    </task>
-    <task id="LOCAL-00011" summary="demo url added">
-      <created>1612265962759</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1612265962759</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fixed display of word on initial screen">
-      <created>1612441167409</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1612441167409</updated>
-    </task>
-    <task id="LOCAL-00013" summary="more test">
-      <created>1612441688107</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1612441688107</updated>
-    </task>
-    <task id="LOCAL-00014" summary="more fixes">
-      <created>1612443071507</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1612443071507</updated>
-    </task>
-    <task id="LOCAL-00015" summary="more fixes with lazy load">
-      <created>1612443531853</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1612443531853</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,26 +151,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finished the home page, moving to more logical views" />
-    <MESSAGE value="added more functionality" />
-    <MESSAGE value="removed warnings" />
-    <MESSAGE value="added new difficulty changes" />
-    <MESSAGE value="removed jquery bootstrap" />
-    <MESSAGE value="fixed eslit for dependencies" />
-    <MESSAGE value="added code splitting" />
-    <MESSAGE value="commit code checker" />
-    <MESSAGE value="new changes" />
-    <MESSAGE value="fixed jest with react issue" />
-    <MESSAGE value="fixed jest with react issue shelve issue" />
-    <MESSAGE value="demo url added" />
-    <MESSAGE value="fixed display of word on initial screen" />
-    <MESSAGE value="more test" />
-    <MESSAGE value="more fixes" />
-    <MESSAGE value="more fixes with lazy load" />
-    <option name="LAST_COMMIT_MESSAGE" value="more fixes with lazy load" />
   </component>
 </project>

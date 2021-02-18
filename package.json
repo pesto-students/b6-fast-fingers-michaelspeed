@@ -1,51 +1,69 @@
 {
-  "name": "fastfingers",
-  "version": "0.2.0",
+  "name": "fast-fingers",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "nx": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx workspace-lint && nx lint",
+    "e2e": "nx e2e",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected": "nx affected",
+    "format": "nx format:write",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "nx migrate latest",
+    "workspace-generator": "nx workspace-generator",
+    "dep-graph": "nx dep-graph",
+    "help": "nx help"
+  },
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "bootstrap": "^5.0.0-beta1",
-    "clsx": "^1.1.1",
-    "moment": "^2.29.1",
-    "nanoid": "^3.1.20",
-    "navi": "^0.14.0",
-    "node-sass": "^4.14.0",
-    "pouchdb-adapter-idb": "^7.2.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-navi": "^0.14.4",
-    "react-scripts": "3.4.3",
-    "react-spring": "^8.0.27",
-    "rxdb": "^9.12.1",
-    "rxjs": "^6.6.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/core": "^7.0.0",
+    "@nestjs/platform-express": "^7.0.0",
+    "@nestjs/swagger": "^4.7.13",
+    "@nestjs/typeorm": "^7.1.5",
+    "@nestjsx/crud": "^5.0.0-alpha.3",
+    "@nestjsx/crud-typeorm": "^5.0.0-alpha.3",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "~6.6.3",
+    "swagger-ui-express": "^4.1.6",
+    "tslib": "^2.0.0",
+    "typeorm": "^0.2.31"
   },
   "devDependencies": {
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "react-test-renderer": "^17.0.1"
+    "@nestjs/schematics": "^7.0.0",
+    "@nestjs/testing": "^7.0.0",
+    "@nrwl/cli": "11.2.12",
+    "@nrwl/eslint-plugin-nx": "11.2.12",
+    "@nrwl/jest": "11.2.12",
+    "@nrwl/linter": "11.2.12",
+    "@nrwl/nest": "11.2.12",
+    "@nrwl/node": "11.2.12",
+    "@nrwl/tao": "11.2.12",
+    "@nrwl/workspace": "11.2.12",
+    "@types/jest": "26.0.8",
+    "@types/node": "12.12.38",
+    "@typescript-eslint/eslint-plugin": "4.3.0",
+    "@typescript-eslint/parser": "4.3.0",
+    "dotenv": "6.2.0",
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "6.0.0",
+    "jest": "26.2.2",
+    "prettier": "2.2.1",
+    "ts-jest": "26.4.0",
+    "ts-node": "~9.1.1",
+    "typescript": "~4.0.3"
   }
 }

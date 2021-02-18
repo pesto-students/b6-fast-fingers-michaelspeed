@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/nest"
+  },
+  "defaultProject": "fingers-server",
+  "projects": {
+    "fingers-server": {
+      "root": "apps/fingers-server",
+      "sourceRoot": "apps/fingers-server/src",
+      "projectType": "application",
+      "prefix": "fingers-server",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/fingers-server",
+            "main": "apps/fingers-server/src/main.ts",
+            "tsConfig": "apps/fingers-server/tsconfig.app.json",
+            "assets": ["apps/fingers-server/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/fingers-server/src/environments/environment.ts",
+                  "with": "apps/fingers-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "fingers-server:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/fingers-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/fingers-server"],
+          "options": {
+            "jestConfig": "apps/fingers-server/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,90 +1,94 @@
-# Fast Fingers
 
-Demo URL - https://quizzical-panini-39bb4d.netlify.app/
 
-Pesto Tech is proudly launching its own speed typing game named **Fast fingers**. You have been awarded with the project and you need to design and develop this project which should
-meet the requirements mentioned in the MVP below.
+# FastFingers
 
-## MVP Requirement
+This project was generated using [Nx](https://nx.dev).
 
-1. Ask player to enter his/her name before starting the game.
+<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
-   - Do not ask player to enter his/her name again if he plays the game again in the same session.
-   - Show proper error message if player doesn't enter his/her name and clicks on `START GAME`.
+🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
-2. Set Default difficulty level to `EASY`. User should be able to change the difficulty level using dropdown.
-3. Start the game on `START GAME` button click.
+## Adding capabilities to your workspace
 
-4. Show random word from dictionary and an input box on game screen.
+Nx supports many plugins which add capabilities for developing different types of applications and different tools.
 
-- For `EASY` difficulty level, word length should be less than or equal to 4.
-- For `MEDIUM` difficulty level, word length should be between 5-8(noth numbers included).
-- For `HARD` difficulty level, word length should be greater than 8.
+These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
 
-5. As soon as the typed word matches the word shown on screen, it should we considered submitted (pressing "ENTER" button shall not be required to submit a word). Empty the input box after a successful attempt.
+Below are our core plugins:
 
-6. A timer shall be shown on the screen for every word and the maximum time that an user is allowed to type a word will depend on the difficulty factor. Refer to the formula provided below to calculate the maximum time allowed :
+- [React](https://reactjs.org)
+  - `npm install --save-dev @nrwl/react`
+- Web (no framework frontends)
+  - `npm install --save-dev @nrwl/web`
+- [Angular](https://angular.io)
+  - `npm install --save-dev @nrwl/angular`
+- [Nest](https://nestjs.com)
+  - `npm install --save-dev @nrwl/nest`
+- [Express](https://expressjs.com)
+  - `npm install --save-dev @nrwl/express`
+- [Node](https://nodejs.org)
+  - `npm install --save-dev @nrwl/node`
 
-Timer value = (Number of letters in the word) / (Difficulty factor)
+There are also many [community plugins](https://nx.dev/nx-community) you could add.
 
-Round the timer value to nearest integer bigger than the value.
+## Generate an application
 
-Initially the difficulty factor would be 1 and it will keep increasing as the player progresses in the game and the timer value is guaranteed to be greater than or equal to 2 seconds that means a player must get at least 2 seconds to type a word. So whenever the calculated value is found to be less than 2 seconds, it should be rounded off to 2 seconds always.
+Run `nx g @nrwl/react:app my-app` to generate an application.
 
-7. There are three levels in game: EASY, MEDIUM and HARD
+> You can use any of the plugins above to generate applications as well.
 
-Difficulty factor for easy level: 1
+When using Nx, you can create multiple applications and libraries in the same workspace.
 
-Difficulty factor for medium level: 1.5
+## Generate a library
 
-Difficulty factor for hard level: 2
+Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
-8. Increase difficulty factor by 0.01 after every successful word attempt.
+> You can also use any of the plugins above to generate libraries as well.
 
-9. Change the game level if difficulty factor crosses particular levels difficulty factor.
+Libraries are shareable across libraries and applications. They can be imported from `@fast-fingers/mylib`.
 
-10. Player should be able to stop the game by clicking on `STOP GAME` button
-11. **Game score for the player is the total time player was able to remain in the game before game gets over either because his/her time runs out for a particular word or player Stops the game**.
-12. Show previous games score for player in a sidebar
+## Development server
 
-13. Show best score for player
-14. Application UI should closely match with the provided UI design mocks.
+Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-**Note: Please deploy your application to Netlify(no other platforms allowed at this point) and Add your Application link to website section in About field**
-![](public/about.png)
+## Code scaffolding
 
-## Additional Requirement
+Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
 
-- Write Test cases for your components.
+## Build
 
-## Tips
+Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-- Deploy your application in very early stage and then do continous development.
-- Test your application in Google Chrome, Mozilla firefox and Internet explorer 11.
+## Running unit tests
 
-## UI Design mocks
+Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
 
-UI design mocks are available in `design-mocks` folder
+Run `nx affected:test` to execute the unit tests affected by a change.
 
-|                         |                         |
-| :---------------------: | :---------------------: |
-| ![](design-mocks/1.png) | ![](design-mocks/2.png) |
-| ![](design-mocks/3.png) | ![](design-mocks/4.png) |
-| ![](design-mocks/5.png) | ![](design-mocks/6.png) |
+## Running end-to-end tests
 
-[Adobe XD design link](https://drive.google.com/file/d/1qYhb8cNdXoBnD9rxoDcWF4DmTEpQX35n/view?usp=sharing)
+Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
 
-[Zeplin web link](https://zpl.io/a710mxj)
+Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
-Zeplin App Link: zpl://project?pid=5f75f13621f33094313f2b94
+## Understand your workspace
 
-## Allowed Tech stack
+Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
-- HTML, CSS, JavaScript
-- Bootstrap
-- ReactJS
-- SCSS
-- DOM Testing Library
-- Jest and React Testing Library
+## Further help
 
-**NOTE: React Component libraries like Material UI, Antd, Chakra UI are not allowed**
+Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+
+
+## ☁ Nx Cloud
+
+### Computation Memoization in the Cloud
+
+<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
+
+Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
+
+Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
+
+Visit [Nx Cloud](https://nx.app/) to learn more.
