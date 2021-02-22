@@ -5,6 +5,8 @@ import {UserService} from "./user/user.service";
 import {WordsService} from "./words/words.service";
 import {Scores, User, Words} from "@fast-fingers/entities";
 import {DB} from "../../../environment";
+import {JwtModule} from "@nestjs/jwt";
+import {TOKEN} from "../config/constants";
 
 export const coreService = [
   ScoresService,
@@ -21,6 +23,14 @@ export const entitiesMap = [
 let defaultTypeOrmModule: DynamicModule
 
 @Module({
+  imports: [
+    JwtModule.register({
+      secretOrPrivateKey: TOKEN,
+      signOptions: {
+        expiresIn: '365d'
+      }
+    }),
+  ],
   providers: [
     ...coreService.map(item => item)
   ],

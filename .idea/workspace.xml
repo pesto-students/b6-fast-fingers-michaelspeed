@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="added next project for fast fingers">
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/Input/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/game/game.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/profile/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/scores/Scores.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/layouts/GameLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/session/[session].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/guard/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/config/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/dictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/entities/src/lib/interfaces/auth.interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/api/api.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/api.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/api/controller/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/controller/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/services.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/services.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/words.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/words.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/entities/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entities/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -35,6 +61,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/fingers-server/src/app" />
       <recent name="$PROJECT_DIR$/libs/entities/src/lib" />
@@ -49,7 +78,12 @@
       <option name="presentableId" value="Default" />
       <updated>1613628980833</updated>
       <workItem from="1613628984206" duration="5395000" />
-      <workItem from="1613639883051" duration="4971000" />
+      <workItem from="1613639883051" duration="11795000" />
+      <workItem from="1613677462983" duration="4000" />
+      <workItem from="1613892041661" duration="11025000" />
+      <workItem from="1613924864523" duration="143000" />
+      <workItem from="1613925010904" duration="1216000" />
+      <workItem from="1613991803024" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>
@@ -65,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613647603582</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added next project for fast fingers">
+      <created>1613655597663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613655597663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,6 +5,8 @@ import {WordsController} from "./controller/words/words.controller";
 import {ServicesModule} from "../services/services.module";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {Scores, User, Words} from "@fast-fingers/entities";
+import {APP_GUARD} from "@nestjs/core";
+import {AuthGuard} from "./guard/auth.guard";
 
 @Module({
   imports: [
@@ -15,6 +17,12 @@ import {Scores, User, Words} from "@fast-fingers/entities";
     ScoresController,
     UserController,
     WordsController
-  ]
+  ],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: AuthGuard,
+    },
+  ],
 })
 export class ApiModule {}
