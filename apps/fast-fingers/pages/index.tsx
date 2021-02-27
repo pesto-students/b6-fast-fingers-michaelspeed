@@ -1,11 +1,20 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 
 import styles from './index.module.css';
 import Input from "../components/Input/Input";
 import {useRouter} from "next/router";
-import {anime} from "react-anime";
+import {apiHost, apiLogin} from "../config/config";
+import axios from "axios";
+import {inject, observer} from "mobx-react";
+import {Store} from "../store/store";
+import Profile from "../components/profile/Profile";
+import SegmentedControls from "../components/segmentedControls/SegmentedControls";
 
-export function Index() {
+interface PageProps {
+  store: Store;
+}
+
+export function Index({store}: PageProps) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigator = useRouter()
@@ -19,27 +28,51 @@ export function Index() {
                 <h6 className="mt-6 text-center text-6xl font-extrabold text-red-500">Fast Fingers</h6>
               </div>
           </div>
-          <div className="mt-8 space-y-6">
-              <div className="rounded-md shadow-sm -space-y-px">
-                <div>
-                  <Input value={email} onChange={event => setEmail(event.target.value)} label='email'/>
-                </div>
-                <div>
-                  <Input value={password} onChange={event => setPassword(event.target.value)} label={password} type='password'/>
-                </div>
+          {store.user && <div className="mt-8 space-y-6">
+            <div className="rounded-md shadow-sm -space-y-px">
+              <div>
+                <Profile userOnly={true} user={store.user}/>
+              </div>
+            </div>
+            <div className='flex justify-evenly'>
+              <a className='text-red-300'>Not You?</a>
+            </div>
+            <div>
+              <div className='flex justify-center'>
+                <span className='text-red-500 text-2xl'>Select Difficulty</span>
+              </div>
+              <SegmentedControls />
+            </div>
+          </div>}
+          {!store.user && <div className="mt-8 space-y-6">
+            <div className="rounded-md shadow-sm -space-y-px">
+              <div>
+                <Input value={email} onChange={event => setEmail(event.target.value)} label='email'/>
               </div>
               <div>
-                <button className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-500 hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                        onClick={() => navigator.push('/session/ssss')}
-                >
-                  Sign in
-                </button>
+                <Input value={password} onChange={event => setPassword(event.target.value)} label={password} type='password'/>
               </div>
-          </div>
+            </div>
+            <div>
+              <button className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-500 hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                      onClick={ async () => {
+                        axios.post(apiLogin, {email: email, password: password}).then(res => {
+                          const {data: {token, user}} = res
+                          store.setUserData(token, user)
+
+                        }).catch(err => {
+                          console.log(err)
+                        })
+                      }}
+              >
+                Sign in
+              </button>
+            </div>
+          </div>}
         </div>
       </div>
     </div>
   );
 }
 
-export default Index;
+export default inject('store')(observer(Index));

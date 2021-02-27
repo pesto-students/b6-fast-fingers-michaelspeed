@@ -2,32 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="added next project for fast fingers">
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/Input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/game/game.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/profile/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/scores/Scores.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/layouts/GameLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/session/[session].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/guard/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/config/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/dictionary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/entities/src/lib/interfaces/auth.interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/components/segmentedControls/SegmentedControls.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/config/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fast-fingers/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/controller/sessions/sessions.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/sessions/sessions.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/entities/src/lib/database/sessions/sessions.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/entities/src/lib/enum/difficulty.enum.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/components/profile/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/pages/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/pages/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/api/api.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/api.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/api/controller/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/api/controller/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/services.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/services.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/words.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/app/services/words/words.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fingers-server/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fingers-server/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/entities/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entities/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/entities/src/lib/database/scores/scores.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entities/src/lib/database/scores/scores.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/entities/src/lib/database/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entities/src/lib/database/user/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/entities/src/lib/database/words/words.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entities/src/lib/database/words/words.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -84,6 +84,9 @@
       <workItem from="1613924864523" duration="143000" />
       <workItem from="1613925010904" duration="1216000" />
       <workItem from="1613991803024" duration="1000" />
+      <workItem from="1614262947025" duration="8396000" />
+      <workItem from="1614310284610" duration="4411000" />
+      <workItem from="1614435980845" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>

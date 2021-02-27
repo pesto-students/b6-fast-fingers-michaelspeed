@@ -24,6 +24,15 @@ export class UserService extends TypeOrmCrudService<User> {
     })
   }
 
+  async userValidator({email, password}): Promise<AuthResponseInterface> {
+    const user = await this.repo.findOne({email})
+    if (user) {
+      return this.LoginUser({email, password})
+    } else {
+      return this.CreateUser({email, password})
+    }
+  }
+
   async CreateUser({email, password}): Promise<AuthResponseInterface> {
     // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
@@ -35,7 +44,7 @@ export class UserService extends TypeOrmCrudService<User> {
         .then(async (value) => {
           const token = await this.createToken(value.id)
           resolve({
-            user: value,
+            user: this.userFormatter(value),
             token,
           })
         })
@@ -51,11 +60,18 @@ export class UserService extends TypeOrmCrudService<User> {
     if (valid) {
       const token = await this.createToken(user.id)
       return {
-        user,
+        user: this.userFormatter(user),
         token
       }
     } else {
       throw new UnauthorizedException('Email or Password does not match')
+    }
+  }
+
+  private userFormatter(user: User) {
+    return {
+      password: null,
+      ...user
     }
   }
 }

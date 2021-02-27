@@ -3,18 +3,21 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import {ScoresService} from "./scores/scores.service";
 import {UserService} from "./user/user.service";
 import {WordsService} from "./words/words.service";
-import {Scores, User, Words} from "@fast-fingers/entities";
+import {Scores, Session, User, Words} from "@fast-fingers/entities";
 import {DB} from "../../../environment";
 import {JwtModule} from "@nestjs/jwt";
 import {TOKEN} from "../config/constants";
+import {SessionsService} from "./sessions/sessions.service";
 
 export const coreService = [
   ScoresService,
   UserService,
-  WordsService
+  WordsService,
+  SessionsService
 ]
 
 export const entitiesMap = [
+  Session,
   User,
   Words,
   Scores

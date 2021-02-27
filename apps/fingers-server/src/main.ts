@@ -13,6 +13,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
+  app.enableCors({
+    origin: '*'
+  });
   const port = process.env.PORT || 3333;
   const config = new DocumentBuilder()
     .setTitle("Fast Fingers Api")

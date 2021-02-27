@@ -20,14 +20,8 @@ import {AuthInterface, AuthResponseInterface, User} from "@fast-fingers/entities
 export class UserController implements CrudController<User> {
   constructor(public service: UserService) {}
 
-  @Post('register')
-  async RegisterUser(@Body() body: AuthInterface): Promise<AuthResponseInterface> {
-    console.log(body)
-    return this.service.CreateUser({email: body.email, password: body.password})
-  }
-
   @Post('login')
   async LoginUser(@Body() body: AuthInterface): Promise<AuthResponseInterface> {
-    return this.service.LoginUser({email: body.email, password: body.password})
+    return this.service.userValidator({email: body.email, password: body.password})
   }
 }

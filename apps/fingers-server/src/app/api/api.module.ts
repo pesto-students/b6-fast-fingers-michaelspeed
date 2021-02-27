@@ -7,6 +7,7 @@ import {TypeOrmModule} from "@nestjs/typeorm";
 import {Scores, User, Words} from "@fast-fingers/entities";
 import {APP_GUARD} from "@nestjs/core";
 import {AuthGuard} from "./guard/auth.guard";
+import {SessionsController} from "./controller/sessions/sessions.controller";
 
 @Module({
   imports: [
@@ -16,7 +17,8 @@ import {AuthGuard} from "./guard/auth.guard";
   controllers: [
     ScoresController,
     UserController,
-    WordsController
+    WordsController,
+    SessionsController
   ],
   providers: [
     {

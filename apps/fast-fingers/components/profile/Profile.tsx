@@ -1,6 +1,12 @@
 import React from 'react';
+import {User} from "@fast-fingers/entities";
 
-export default function Profile() {
+interface Props {
+  user: User;
+  userOnly?: boolean
+}
+
+export default function Profile(props: Props) {
   return (
     <React.Fragment>
       <div className="max-w-xl w-full space-y-8 shadow-lg sm:rounded-lg p-10 ring-red-300 ring-2">
@@ -11,10 +17,10 @@ export default function Profile() {
             </svg>
           </div>
           <div className='ml-3'>
-            <h2>Name</h2>
-            <a className="inline-flex items-center justify-center px-2  border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700">
+            <h2 className='text-red-600 text-2xl'>{props.user.email}</h2>
+            {!props.userOnly && <a className="inline-flex items-center justify-center px-2  border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700">
               easy
-            </a>
+            </a>}
           </div>
         </div>
       </div>
