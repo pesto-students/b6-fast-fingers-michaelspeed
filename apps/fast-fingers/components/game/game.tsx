@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {buildStyles, CircularProgressbar} from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 import Input from "../Input/Input";
-import { io } from "socket.io-client";
-import {apiWords} from "../../config/config";
 import {inject, observer} from "mobx-react";
 import {Store} from "../../store/store";
 import {useTicker} from "../../hooks/useTicker";

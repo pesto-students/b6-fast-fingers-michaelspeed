@@ -52,21 +52,22 @@ export const useTicker = (difficulty) => {
     }
   }
 
+  const factoredTime = ((word.length) / factor) * 100
+  const initTime = factoredTime < 200 ? 200 : factoredTime
+  const mainTimer = timer(0,10)
+
   function initiate() {
     setPlayState(true)
     timerSub = mainTimer.pipe(
       map(i => initTime - i),
       takeWhile(i => (i >= 0))
-    ).subscribe(value => {
+    )
+    timerSub.subscribe(value => {
       const percentage = ((value / initTime) * 100).toFixed(2)
       setTimers(value)
       setLoader(Number(percentage))
     })
   }
-
-  const factoredTime = ((word.length) / factor) * 100
-  const initTime = factoredTime < 200 ? 200 : factoredTime
-  const mainTimer = timer(0,10)
 
   function reset() {
     timerSub.unsubscribe()
