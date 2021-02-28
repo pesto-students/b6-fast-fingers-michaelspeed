@@ -5,6 +5,9 @@ import './styles.css';
 import useSWR, { SWRConfig } from 'swr';
 import {useStore} from "../store/store";
 import { Provider } from 'mobx-react';
+import {QueryClient, QueryClientProvider} from "react-query";
+
+const queryClient = new QueryClient()
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const store = useStore(pageProps.initialState)
@@ -14,18 +17,15 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to fast-fingers!</title>
       </Head>
-      <Provider store={store}>
-        <SWRConfig value={{
-          refreshInterval: 3000,
-          fetcher: (resource, init) => fetch(resource, init).then(res => res.json())
-        }}>
+      <QueryClientProvider client={queryClient}>
+        <Provider store={store}>
           <div className="app">
             <main>
               <Component {...pageProps} />
             </main>
           </div>
-        </SWRConfig>
-      </Provider>
+        </Provider>
+      </QueryClientProvider>
     </>
   );
 }

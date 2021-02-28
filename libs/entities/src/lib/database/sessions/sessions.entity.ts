@@ -1,7 +1,7 @@
 import {
   Column,
   CreateDateColumn,
-  Entity,
+  Entity, ManyToMany,
   ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
@@ -36,7 +36,7 @@ export class Session {
   @Column({default: false})
   invalidate: boolean;
 
-  @OneToMany('Words', 'session')
+  @ManyToMany('Words', 'session')
   words: Words[];
 
 }

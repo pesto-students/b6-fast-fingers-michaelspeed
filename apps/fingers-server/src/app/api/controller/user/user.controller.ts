@@ -9,7 +9,17 @@ import {AuthInterface, AuthResponseInterface, User} from "@fast-fingers/entities
   },
   routes: {
     exclude: ["createOneBase", "createManyBase", "updateOneBase", "replaceOneBase"]
-  }
+  },
+  query: {
+    exclude: ['password']
+  },
+  params: {
+    id: {
+      type: 'uuid',
+      primary: true,
+      field: 'id',
+    },
+  },
 })
 @CrudAuth({
   filter: (user: User) => ({

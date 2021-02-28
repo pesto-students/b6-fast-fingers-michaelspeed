@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, ManyToMany, JoinTable, PrimaryGeneratedColumn} from "typeorm";
 import {Session} from "../sessions/sessions.entity";
 
 @Entity()
@@ -12,6 +12,7 @@ export class Words {
   @Column()
   length: number;
 
-  @ManyToOne('Session','words')
+  @ManyToMany('Session','words')
+  @JoinTable()
   session: Session;
 }

@@ -24,6 +24,13 @@ export class UserService extends TypeOrmCrudService<User> {
     })
   }
 
+  async decryptToken(token: string): Promise<{userId}> {
+    return new Promise((resolve, reject) => {
+      const {userId}: any = this.jwtService.decode(token);
+      resolve({userId})
+    })
+  }
+
   async userValidator({email, password}): Promise<AuthResponseInterface> {
     const user = await this.repo.findOne({email})
     if (user) {

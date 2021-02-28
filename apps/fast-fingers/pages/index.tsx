@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import styles from './index.module.css';
 import Input from "../components/Input/Input";
 import {useRouter} from "next/router";
-import {apiHost, apiLogin} from "../config/config";
+import {apiHost, apiLogin, apiSessionCreate} from "../config/config";
 import axios from "axios";
 import {inject, observer} from "mobx-react";
 import {Store} from "../store/store";
@@ -18,6 +18,23 @@ export function Index({store}: PageProps) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigator = useRouter()
+
+  const onSelectDifficulty = difficulty => {
+    console.log(difficulty)
+    axios.post(apiSessionCreate, {difficulty}, {
+      headers: {
+        'Authorization': store.token
+      }
+    }).then((response) => {
+      if (response.status === 201) {
+        const {id} = response.data
+        store.setSession(id)
+        navigator.push(`/session/${id}`)
+      }
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
 
   return (
     <div className={styles.page}>
@@ -41,7 +58,7 @@ export function Index({store}: PageProps) {
               <div className='flex justify-center'>
                 <span className='text-red-500 text-2xl'>Select Difficulty</span>
               </div>
-              <SegmentedControls />
+              <SegmentedControls onChange={onSelectDifficulty}/>
             </div>
           </div>}
           {!store.user && <div className="mt-8 space-y-6">

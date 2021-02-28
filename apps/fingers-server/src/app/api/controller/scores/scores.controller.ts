@@ -6,7 +6,14 @@ import {ScoresService} from "../../../services";
 @Crud({
   model: {
     type: Scores
-  }
+  },
+  params: {
+    id: {
+      type: 'uuid',
+      primary: true,
+      field: 'id',
+    },
+  },
 })
 @Controller("scores")
 export class ScoresController implements CrudController<Scores> {
