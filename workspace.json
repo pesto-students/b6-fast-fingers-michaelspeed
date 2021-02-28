@@ -1,0 +1,191 @@
+{
+  "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/nest"
+  },
+  "defaultProject": "fingers-server",
+  "projects": {
+    "fingers-server": {
+      "root": "apps/fingers-server",
+      "sourceRoot": "apps/fingers-server/src",
+      "projectType": "application",
+      "prefix": "fingers-server",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/apps/fingers-server",
+            "main": "apps/fingers-server/src/main.ts",
+            "tsConfig": "apps/fingers-server/tsconfig.app.json",
+            "assets": [
+              "apps/fingers-server/src/assets"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/fingers-server/src/environments/environment.ts",
+                  "with": "apps/fingers-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "fingers-server:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/fingers-server/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/fingers-server"
+          ],
+          "options": {
+            "jestConfig": "apps/fingers-server/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "entities": {
+      "root": "libs/entities",
+      "sourceRoot": "libs/entities/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/entities/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/entities"
+          ],
+          "options": {
+            "jestConfig": "libs/entities/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "fast-fingers": {
+      "root": "apps/fast-fingers",
+      "sourceRoot": "apps/fast-fingers",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "root": "apps/fast-fingers",
+            "outputPath": "dist/apps/fast-fingers"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "fast-fingers:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "fast-fingers:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "fast-fingers:build:production"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/fast-fingers/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/fast-fingers"
+          ],
+          "options": {
+            "jestConfig": "apps/fast-fingers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "fast-fingers-e2e": {
+      "root": "apps/fast-fingers-e2e",
+      "sourceRoot": "apps/fast-fingers-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/fast-fingers-e2e/cypress.json",
+            "tsConfig": "apps/fast-fingers-e2e/tsconfig.e2e.json",
+            "devServerTarget": "fast-fingers:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "fast-fingers:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/fast-fingers-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  }
+}

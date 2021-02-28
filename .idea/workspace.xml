@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="more fixes with lazy load">
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="a lot of refactoring has been done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlayConsole/PlayConsoleInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PlayStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PlayStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/components/game/game.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/components/game/game.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/hooks/useTicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/hooks/useTicker.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,15 +13,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ncpJXt2Vw399OhlocsP09Yc1Ce" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1oduqOLKJI9LpNiMaTdNzjWqKeu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -31,162 +25,76 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public/data" />
-      <recent name="$PROJECT_DIR$/public/bg" />
+      <recent name="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/fingers-server/src/app" />
+      <recent name="$PROJECT_DIR$/libs/entities/src/lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d82d8985-947c-4f6c-b522-95e394164be9" name="Default Changelist" comment="" />
-      <created>1611699163436</created>
+      <changelist id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="" />
+      <created>1613628980833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611699163436</updated>
-      <workItem from="1611699167015" duration="819000" />
-      <workItem from="1611741130737" duration="11299000" />
-      <workItem from="1611850834696" duration="54000" />
-      <workItem from="1611950225280" duration="1250000" />
-      <workItem from="1611990835439" duration="9906000" />
-      <workItem from="1612020235802" duration="15172000" />
-      <workItem from="1612075401589" duration="16772000" />
-      <workItem from="1612116928915" duration="5537000" />
-      <workItem from="1612162605486" duration="4954000" />
-      <workItem from="1612186334829" duration="3066000" />
-      <workItem from="1612192456279" duration="3198000" />
-      <workItem from="1612196766884" duration="29000" />
-      <workItem from="1612196797358" duration="1779000" />
-      <workItem from="1612265865857" duration="108000" />
-      <workItem from="1612268423689" duration="96000" />
-      <workItem from="1612440224096" duration="5331000" />
-      <workItem from="1612449645953" duration="649000" />
+      <updated>1613628980833</updated>
+      <workItem from="1613628984206" duration="5395000" />
+      <workItem from="1613639883051" duration="11795000" />
+      <workItem from="1613677462983" duration="4000" />
+      <workItem from="1613892041661" duration="11025000" />
+      <workItem from="1613924864523" duration="143000" />
+      <workItem from="1613925010904" duration="1216000" />
+      <workItem from="1613991803024" duration="1000" />
+      <workItem from="1614437516308" duration="239000" />
+      <workItem from="1614438979361" duration="22527000" />
+      <workItem from="1614502391306" duration="7264000" />
+      <workItem from="1614514850099" duration="9146000" />
     </task>
-    <task id="LOCAL-00001" summary="finished the home page, moving to more logical views">
-      <created>1612005781080</created>
+    <task id="LOCAL-00001" summary="initialize full stack">
+      <created>1613639372750</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1612005781080</updated>
+      <updated>1613639372750</updated>
     </task>
-    <task id="LOCAL-00002" summary="added more functionality">
-      <created>1612126279214</created>
+    <task id="LOCAL-00002" summary="added next project for fast fingers">
+      <created>1613647603582</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1612126279214</updated>
+      <updated>1613647603582</updated>
     </task>
-    <task id="LOCAL-00003" summary="removed warnings">
-      <created>1612167396977</created>
+    <task id="LOCAL-00003" summary="added next project for fast fingers">
+      <created>1613655597663</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1612167396977</updated>
+      <updated>1613655597663</updated>
     </task>
-    <task id="LOCAL-00004" summary="added new difficulty changes">
-      <created>1612190057155</created>
+    <task id="LOCAL-00004" summary="a lot of refactoring has been done">
+      <created>1614517053602</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1612190057155</updated>
+      <updated>1614517053602</updated>
     </task>
-    <task id="LOCAL-00005" summary="removed jquery bootstrap">
-      <created>1612190126325</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1612190126325</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fixed eslit for dependencies">
-      <created>1612194503192</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1612194503192</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added code splitting">
-      <created>1612196489717</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1612196489717</updated>
-    </task>
-    <task id="LOCAL-00008" summary="commit code checker">
-      <created>1612196864805</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1612196864805</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fixed jest with react issue">
-      <created>1612202039982</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1612202039982</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fixed jest with react issue shelve issue">
-      <created>1612203083038</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1612203083038</updated>
-    </task>
-    <task id="LOCAL-00011" summary="demo url added">
-      <created>1612265962759</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1612265962759</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fixed display of word on initial screen">
-      <created>1612441167409</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1612441167409</updated>
-    </task>
-    <task id="LOCAL-00013" summary="more test">
-      <created>1612441688107</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1612441688107</updated>
-    </task>
-    <task id="LOCAL-00014" summary="more fixes">
-      <created>1612443071507</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1612443071507</updated>
-    </task>
-    <task id="LOCAL-00015" summary="more fixes with lazy load">
-      <created>1612443531853</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1612443531853</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,22 +114,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finished the home page, moving to more logical views" />
-    <MESSAGE value="added more functionality" />
-    <MESSAGE value="removed warnings" />
-    <MESSAGE value="added new difficulty changes" />
-    <MESSAGE value="removed jquery bootstrap" />
-    <MESSAGE value="fixed eslit for dependencies" />
-    <MESSAGE value="added code splitting" />
-    <MESSAGE value="commit code checker" />
-    <MESSAGE value="new changes" />
-    <MESSAGE value="fixed jest with react issue" />
-    <MESSAGE value="fixed jest with react issue shelve issue" />
-    <MESSAGE value="demo url added" />
-    <MESSAGE value="fixed display of word on initial screen" />
-    <MESSAGE value="more test" />
-    <MESSAGE value="more fixes" />
-    <MESSAGE value="more fixes with lazy load" />
-    <option name="LAST_COMMIT_MESSAGE" value="more fixes with lazy load" />
+    <MESSAGE value="initialize full stack" />
+    <MESSAGE value="added next project for fast fingers" />
+    <MESSAGE value="a lot of refactoring has been done" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of refactoring has been done" />
   </component>
 </project>
