@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed workspace.json">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed package.json" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +61,7 @@
       <workItem from="1614502391306" duration="7264000" />
       <workItem from="1614514850099" duration="13068000" />
       <workItem from="1614577468791" duration="7247000" />
-      <workItem from="1614598553551" duration="20433000" />
+      <workItem from="1614598553551" duration="20942000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>
@@ -163,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614627964560</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed package.json">
+      <created>1614628162041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614628162041</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +200,7 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="added docker config, updated ui, updated readme" />
     <MESSAGE value="fixed workspace.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed workspace.json" />
+    <MESSAGE value="fixed package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed package.json" />
   </component>
 </project>
