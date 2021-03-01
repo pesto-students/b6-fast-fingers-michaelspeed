@@ -4,6 +4,14 @@
 
 ## Description
 
+### URLS
+
+Backend - http://fingerserver.atmiyo.me/api
+
+Frontend - http://fingers.atmiyo.me/
+
+Documentation - http://fingerserver.atmiyo.me/documentation/
+
 ### TechStack
 
 Workspace - **Nx** https://nx.dev/
