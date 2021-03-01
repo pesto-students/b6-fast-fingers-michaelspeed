@@ -1,19 +1,70 @@
-# Fast Fingers
+
+
+# FastFingers
+
+## Description
+
+### URLS
+
+Backend - http://fingerserver.atmiyo.me/api
+
+Frontend - http://fingers.atmiyo.me/
+
+Documentation - http://fingerserver.atmiyo.me/documentation/
+
+Docker build available [Base image from my custom image of node 14 + nginx available here https://github.com/michaelspeed/node-docker]
+
+### TechStack
+
+Workspace - **Nx** https://nx.dev/
+
+Backend - **Nest JS** https://nestjs.com/
+
+Location - **_apps/fingers-server_**
+
+Frontend - **Next JS** https://nextjs.org/
+
+Location - **_apps/fast-fingers_**
+
+Libraries - **@fast-fingers/entities**
+
+Location - _**libs/entities**_
+
+### Development
+
+1. yarn Install / npm install
+2. Make sure nx is installed globally
+3. `nx run-many --projects=fingers-server,fast-fingers --parallel --target=serve`
+
+#### Port Setup
+
+1. http://localhost:3333/api - API
+2. http://localhost:3333/documentation - API Swagger Documentation
+3. http://localhost:4200 - Frontend Next JS
+
+#### Externals
+
+1. Rxjs
+2. Mobx
+3. Moment
+4. Fabric React
+
+## Original Readme
 
 Pesto Tech is proudly launching its own speed typing game named **Fast fingers**. You have been awarded with the project and you need to design and develop this project which should
 meet the requirements mentioned in the MVP below.
 
-## MVP Requirement
+### MVP Requirement
 
 1. Ask player to enter his/her name before starting the game.
 
-   - Do not ask player to enter his/her name again if he plays the game again in the same session.
-   - Show proper error message if player doesn't enter his/her name and clicks on `START GAME`.
+  - Do not ask player to enter his/her name again if he plays the game again in the same session.
+  - Show proper error message if player doesn't enter his/her name and clicks on `START GAME`.
 
 2. Set Default difficulty level to `EASY`. User should be able to change the difficulty level using dropdown.
 3. Start the game on `START GAME` button click.
 
-4. Show random word from dictionary and an input box on game screen.
+4. Show a random word from a dictionary, and an input box on a game screen.
 
 - For `EASY` difficulty level, word length should be less than or equal to 4.
 - For `MEDIUM` difficulty level, word length should be between 5-8(noth numbers included).
@@ -48,27 +99,18 @@ Difficulty factor for hard level: 2
 13. Show best score for player
 14. Application UI should closely match with the provided UI design mocks.
 
-**Note: Please deploy your application to Netlify(no other platforms allowed at this point) and Add your Application link to website section in About field**
-![](public/about.png)
+**Note: Please deploy your application to Netlify(no other platforms allowed at this point) and Add your Application link to website section in About a field**
 
-## Additional Requirement
+### Additional Requirement
 
 - Write Test cases for your components.
 
-## Tips
+### Tips
 
 - Deploy your application in very early stage and then do continous development.
 - Test your application in Google Chrome, Mozilla firefox and Internet explorer 11.
 
-## UI Design mocks
-
-UI design mocks are available in `design-mocks` folder
-
-|                         |                         |
-| :---------------------: | :---------------------: |
-| ![](design-mocks/1.png) | ![](design-mocks/2.png) |
-| ![](design-mocks/3.png) | ![](design-mocks/4.png) |
-| ![](design-mocks/5.png) | ![](design-mocks/6.png) |
+### UI Design mocks
 
 [Adobe XD design link](https://drive.google.com/file/d/1qYhb8cNdXoBnD9rxoDcWF4DmTEpQX35n/view?usp=sharing)
 
@@ -76,7 +118,7 @@ UI design mocks are available in `design-mocks` folder
 
 Zeplin App Link: zpl://project?pid=5f75f13621f33094313f2b94
 
-## Allowed Tech stack
+### Allowed Tech stack
 
 - HTML, CSS, JavaScript
 - Bootstrap

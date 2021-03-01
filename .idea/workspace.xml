@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed package.json" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oduqOLKJI9LpNiMaTdNzjWqKeu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/fingers-server/src/app/services/words" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/fingers-server/src/app" />
+      <recent name="$PROJECT_DIR$/libs/entities/src/lib" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="" />
+      <created>1613628980833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613628980833</updated>
+      <workItem from="1613628984206" duration="5395000" />
+      <workItem from="1613639883051" duration="11795000" />
+      <workItem from="1613677462983" duration="4000" />
+      <workItem from="1613892041661" duration="11025000" />
+      <workItem from="1613924864523" duration="143000" />
+      <workItem from="1613925010904" duration="1216000" />
+      <workItem from="1613991803024" duration="1000" />
+      <workItem from="1614437516308" duration="239000" />
+      <workItem from="1614438979361" duration="22527000" />
+      <workItem from="1614502391306" duration="7264000" />
+      <workItem from="1614514850099" duration="13068000" />
+      <workItem from="1614577468791" duration="7247000" />
+      <workItem from="1614598553551" duration="20942000" />
+    </task>
+    <task id="LOCAL-00001" summary="initialize full stack">
+      <created>1613639372750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613639372750</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added next project for fast fingers">
+      <created>1613647603582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613647603582</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added next project for fast fingers">
+      <created>1613655597663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613655597663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="a lot of refactoring has been done">
+      <created>1614517053602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614517053602</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated readme">
+      <created>1614540193274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614540193274</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated readme, finished basic functionality of fast fingers">
+      <created>1614608433602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614608433602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed nx build configs">
+      <created>1614609304961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614609304961</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated hosting config">
+      <created>1614609850369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614609850369</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed next js config">
+      <created>1614610462600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614610462600</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed next js config">
+      <created>1614610770878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614610770878</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated url in documentation">
+      <created>1614612461517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614612461517</updated>
+    </task>
+    <task id="LOCAL-00012" summary="cleanup">
+      <created>1614614009641</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614614009641</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added docker config, updated ui, updated readme">
+      <created>1614627920490</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614627920490</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed workspace.json">
+      <created>1614627964560</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614627964560</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed package.json">
+      <created>1614628162041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614628162041</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initialize full stack" />
+    <MESSAGE value="added next project for fast fingers" />
+    <MESSAGE value="a lot of refactoring has been done" />
+    <MESSAGE value="updated readme" />
+    <MESSAGE value="updated readme, finished basic functionality of fast fingers" />
+    <MESSAGE value="fixed nx build configs" />
+    <MESSAGE value="updated hosting config" />
+    <MESSAGE value="fixed next js config" />
+    <MESSAGE value="updated url in documentation" />
+    <MESSAGE value="cleanup" />
+    <MESSAGE value="added docker config, updated ui, updated readme" />
+    <MESSAGE value="fixed workspace.json" />
+    <MESSAGE value="fixed package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed package.json" />
+  </component>
+</project>
