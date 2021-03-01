@@ -17,8 +17,6 @@ function Game({id, store, difficulty}: Props) {
   const [init, setInit] = useState(false)
   const {setAttempts, setCurrentWord, reset, timer, loader, initiate, playState, currentWord, score, finish} = useTicker(difficulty)
 
-  console.log(word, currentWord)
-
   useEffect(() => {
     reset()
     setWord('')
@@ -37,12 +35,6 @@ function Game({id, store, difficulty}: Props) {
       setInit(true)
     }
   },[init, store])
-
-  /*useEffect(() => {
-    if (store.words.length > 0 && currentWord === '') {
-      setCurrentWord(store.words[0].word)
-    }
-  })*/
 
   useEffect(() => {
     if (word !== '' && currentWord === word) {
