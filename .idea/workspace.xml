@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="updated readme, finished basic functionality of fast fingers">
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed nx build configs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/fast-fingers/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/config/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <workItem from="1614502391306" duration="7264000" />
       <workItem from="1614514850099" duration="13068000" />
       <workItem from="1614577468791" duration="7247000" />
-      <workItem from="1614598553551" duration="8424000" />
+      <workItem from="1614598553551" duration="8896000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614608433602</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed nx build configs">
+      <created>1614609304961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614609304961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +140,7 @@
     <MESSAGE value="a lot of refactoring has been done" />
     <MESSAGE value="updated readme" />
     <MESSAGE value="updated readme, finished basic functionality of fast fingers" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme, finished basic functionality of fast fingers" />
+    <MESSAGE value="fixed nx build configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed nx build configs" />
   </component>
 </project>
