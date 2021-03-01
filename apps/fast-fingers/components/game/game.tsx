@@ -64,9 +64,9 @@ function Game({id, store, difficulty}: Props) {
 
   return (
     <React.Fragment>
-      <div className='bg-white p-8 shadow-lg sm:rounded-lg ms-motion-slideUpIn'>
+      <div className='bg-white p-8 shadow-lg sm:rounded-lg ms-motion-slideUpIn ring-red-300 ring-2 '>
         {!finish && <div style={{width: '100%'}}>
-          <div className='flex justify-center align-items-center align-center'>
+          <div className='flex justify-center align-items-center align-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
             <div style={{height: 300, width: 300}}>
               <CircularProgressbar value={loader} text={timer.toFixed(2)} styles={buildStyles({
                 pathColor: '#EF4444',
@@ -78,7 +78,7 @@ function Game({id, store, difficulty}: Props) {
             {store.words.length > 0 && <h3 className='text-red-700 text-6xl font-extrabold'>{store.words[0].word}</h3>}
           </div>
           <div className='flex justify-center align-items-center align-center mt-10'>
-            <div className='w-1/3'>
+            <div className='w-1/3 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
               <Input value={word} onChange={event => setWords(event.target.value)} classes={['border-red-300']}/>
             </div>
           </div>
@@ -91,7 +91,7 @@ function Game({id, store, difficulty}: Props) {
             <h3 className='text-red-700 text-4xl'>{store.score}</h3>
           </div>
           <div className='flex justify-center align-items-center align-center mt-10'>
-            <a className=" inline-flex items-center justify-center px-3 py-3  text-base font-medium text-red-600 hover:text-white rounded-md text-white ring-2 ring-red-300 hover:bg-red-700 cursor-pointer"
+            <a className=" inline-flex items-center justify-center px-3 py-3  text-base font-medium text-red-600 hover:text-white rounded-md text-white ring-2 ring-red-300 hover:bg-red-700 cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                onClick={() => {
                  store.startGame()
                  reset()

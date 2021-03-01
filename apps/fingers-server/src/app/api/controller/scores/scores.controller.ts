@@ -19,8 +19,8 @@ import {ScoresService} from "../../../services";
 export class ScoresController implements CrudController<Scores> {
   constructor(public service: ScoresService) {}
 
-  @Get('myscores/:userId')
-  async getMyScores(@Param() userId) {
-    return this.service.getMyScores(userId);
+  @Get('myscores/:userId/:take')
+  async getMyScores(@Param() data) {
+    return this.service.getMyScores(data);
   }
 }

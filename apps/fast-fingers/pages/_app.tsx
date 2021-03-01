@@ -6,6 +6,9 @@ import {useStore} from "../store/store";
 import { Provider } from 'mobx-react';
 import { ToastProvider } from 'react-toast-notifications';
 import { createTheme, Fabric, loadTheme } from '@fluentui/react';
+import { initializeIcons } from '@uifabric/icons';
+
+initializeIcons();
 
 const myTheme = createTheme({
   palette: {
@@ -42,7 +45,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to fast-fingers!</title>
+        <title>Welcome to fast-fingers! by MichaelSpeed</title>
       </Head>
       <ToastProvider
         autoDismiss

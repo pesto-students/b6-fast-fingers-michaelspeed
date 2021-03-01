@@ -45,17 +45,18 @@ export function Index({store}: PageProps) {
     })
   }
 
-  console.log(loading)
-
   const toggleLoading = (val?) => setLoading(val)
 
   return (
     <div className={styles.page}>
       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-red-600 to-red-300">
-        <div className="max-w-xl w-full space-y-8 shadow-lg sm:rounded-lg p-10 ring-2 ring-white bg-white">
+        <div className="max-w-xl w-full space-y-8 shadow-lg sm:rounded-lg p-10 ring-2 ring-white bg-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <div>
               <div>
                 <h6 className="mt-6 text-center text-6xl font-extrabold text-red-500">Fast Fingers</h6>
+              </div>
+              <div>
+                <h6 className="mt-6 text-center text-2xl font-extrabold text-red-500">by MichaelSpeed</h6>
               </div>
           </div>
           {store.user && <div className="mt-8 space-y-6 ms-motion-slideUpIn">
@@ -106,7 +107,6 @@ export function Index({store}: PageProps) {
                         toggleLoading(true)
                         axios.post(apiLogin, {email: email, password: password}).then(res => {
                           toggleLoading(false)
-                          console.log('trigger')
                           const {data: {token, user}} = res
                           store.setUserData(token, user)
                         }).catch(err => {
