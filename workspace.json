@@ -111,7 +111,7 @@
           "executor": "@nrwl/next:server",
           "options": {
             "buildTarget": "fast-fingers:build",
-            "dev": true
+            "dev": false
           },
           "configurations": {
             "production": {
