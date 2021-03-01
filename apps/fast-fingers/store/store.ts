@@ -76,7 +76,7 @@ export class Store {
   }
 
   @action updateScores = async() => {
-    const response = await axios.get(`${apiScores}/${this.user.id}`)
+    const response = await axios.get(`${apiScores}/${this.user.id}/10`)
     if (response.status === 200) {
       this.userScores = response.data
     }

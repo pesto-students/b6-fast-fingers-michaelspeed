@@ -42,7 +42,7 @@ function Profile(props: Props) {
 
   return (
     <React.Fragment>
-      <div className="max-w-xl w-full space-y-8 shadow-lg sm:rounded-lg p-10 ring-white ring-2 bg-white">
+      <div className="max-w-xl w-full space-y-8 shadow-lg sm:rounded-lg p-10 ring-red-100 ring-2 bg-white">
         <div className='flex align-center flex-row justify-center align-items-center'>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className='h-10 text-red-700'>

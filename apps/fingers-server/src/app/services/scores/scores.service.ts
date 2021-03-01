@@ -14,6 +14,6 @@ export class ScoresService extends TypeOrmCrudService<Scores> {
   }
 
   async getMyScores(data): Promise<Scores[]> {
-    return this.connection.getRepository(Scores).find({where:{user:{id: data.userId}}, order: {score: 'DESC'}, take: 10})
+    return this.connection.getRepository(Scores).find({where:{user:{id: data.userId}}, order: {score: 'DESC'}, take: data.take, relations: ['session', 'session.words']})
   }
 }

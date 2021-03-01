@@ -1,4 +1,5 @@
 export const apiHost = 'http://fingerserver.atmiyo.me/api'
+// export const apiHost = 'http://localhost:3333/api'
 export const tokenHost = 'fastfingers'
 
 // urls

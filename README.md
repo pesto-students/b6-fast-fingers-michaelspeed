@@ -12,6 +12,8 @@ Frontend - http://fingers.atmiyo.me/
 
 Documentation - http://fingerserver.atmiyo.me/documentation/
 
+Docker build available [Base image from my custom image of node 14 + nginx available here https://github.com/michaelspeed/node-docker]
+
 ### TechStack
 
 Workspace - **Nx** https://nx.dev/

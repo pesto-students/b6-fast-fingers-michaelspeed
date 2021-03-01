@@ -36,7 +36,7 @@ function Session({data, store}: Props) {
     }
   }, [init])
   return (
-    <div className='bg-gradient-to-r from-red-600 to-red-300' style={{marginTop: -20, height: '110vh'}}>
+    <div className='' style={{marginTop: -20, height: '110vh'}}>
       {init && <GameLayout user={user} difficulty={difficulty}>
         <div className='p-10'>
           <div className='grid grid-cols-4 gap-4'>
