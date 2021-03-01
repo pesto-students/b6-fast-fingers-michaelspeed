@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="added docker config, updated ui, updated readme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.json" afterDir="false" />
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed workspace.json">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <workItem from="1614502391306" duration="7264000" />
       <workItem from="1614514850099" duration="13068000" />
       <workItem from="1614577468791" duration="7247000" />
-      <workItem from="1614598553551" duration="20253000" />
+      <workItem from="1614598553551" duration="20433000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614627920490</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed workspace.json">
+      <created>1614627964560</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614627964560</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
     <MESSAGE value="updated url in documentation" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="added docker config, updated ui, updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added docker config, updated ui, updated readme" />
+    <MESSAGE value="fixed workspace.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed workspace.json" />
   </component>
 </project>
