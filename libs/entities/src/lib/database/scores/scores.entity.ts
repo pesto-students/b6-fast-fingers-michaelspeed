@@ -8,7 +8,7 @@ export class Scores {
   id: string;
 
   @Column()
-  score: string;
+  score: number;
 
   @CreateDateColumn()
   createdAt: Date;

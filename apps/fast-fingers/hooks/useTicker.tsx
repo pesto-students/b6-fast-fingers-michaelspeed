@@ -11,8 +11,7 @@ export const useTicker = (difficulty) => {
   const [word, setWord] = useState('')
   const [playState, setPlayState] = useState(false)
   const [finish, setFinish] = useState(false)
-
-  let timerSub
+  const [timerObserver, setTimerObserver] = useState(null)
 
   useEffect(() => {
     switch(difficulty) {
@@ -41,9 +40,9 @@ export const useTicker = (difficulty) => {
   }
 
   async function setCurrentWord(currentWord) {
-    if (timerSub) {
-      timerSub.unsubscribe()
-      timerSub = null
+    if (timerObserver) {
+      timerObserver.unsubscribe()
+      setTimerObserver(null)
     }
     const cword = word
     setWord(currentWord)
@@ -52,29 +51,39 @@ export const useTicker = (difficulty) => {
     }
   }
 
-  const factoredTime = ((word.length) / factor) * 100
-  const initTime = factoredTime < 200 ? 200 : factoredTime
-  const mainTimer = timer(0,10)
-
   function initiate() {
     setPlayState(true)
-    timerSub = mainTimer.pipe(
+    const factoredTime = (((word.length) / factor) * 100) + 100
+    const initTime = factoredTime < 200 ? 200 : factoredTime
+    const mainTimer = timer(0,10)
+
+    const timerSub = mainTimer.pipe(
       map(i => initTime - i),
       takeWhile(i => (i >= 0))
     )
-    timerSub.subscribe(value => {
+    const lateSubscribe = timerSub.subscribe(value => {
       const percentage = ((value / initTime) * 100).toFixed(2)
-      setTimers(value)
+      if (value < 1) {
+        setTimers(0)
+      } else {
+        setTimers(value)
+      }
       setLoader(Number(percentage))
     })
+    setTimerObserver(lateSubscribe)
   }
 
   function reset() {
-    timerSub.unsubscribe()
+    if (timerObserver !== null) {
+      timerObserver.unsubscribe()
+    }
+    setPlayState(false)
     setAttempts(0)
     setFactor(0)
-    setCurrentWord('')
-    timerSub = null
+    setWord('')
+    setTimerObserver(null)
+    setFinish(false)
+    setScore(0)
   }
 
   return {

@@ -32,6 +32,13 @@ Location - _**libs/entities**_
 2. http://localhost:3333/documentation - API Swagger Documentation
 3. http://localhost:4200 - Frontend Next JS
 
+#### Externals
+
+1. Rxjs
+2. Mobx
+3. Moment
+4. Fabric React
+
 ## Original Readme
 
 Pesto Tech is proudly launching its own speed typing game named **Fast fingers**. You have been awarded with the project and you need to design and develop this project which should

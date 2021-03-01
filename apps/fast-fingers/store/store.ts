@@ -1,9 +1,9 @@
 import {action, makeObservable, observable} from "mobx";
 import { enableStaticRendering } from 'mobx-react'
 import {useMemo} from "react";
-import {User, Words} from "@fast-fingers/entities";
+import {Scores, User, Words} from "@fast-fingers/entities";
 import axios from "axios";
-import {apiCreateScore, apiGetWords} from "../config/config";
+import {apiCreateScore, apiGetWords, apiScores} from "../config/config";
 
 enableStaticRendering(typeof window === 'undefined')
 
@@ -19,6 +19,7 @@ export class Store {
   @observable user: User | null = null;
   @observable words: Words[] = []
   @observable score = 0
+  @observable userScores: Scores[] = []
 
   @action hydrate = (data) => {
     if (!data) return;
@@ -45,12 +46,15 @@ export class Store {
   }
 
   @action gameEnd = async() => {
-    await axios.post(apiCreateScore, {
-      score: this.score,
-      session: this.session,
-      user: this.user.id
-    })
-    this.words = []
+    if (this.score !== 0) {
+      await axios.post(apiCreateScore, {
+        score: this.score,
+        session: this.session,
+        user: this.user.id
+      })
+      this.words = []
+    }
+    this.updateScores()
   }
 
   @action setUserData = (token: string, user: User) => {
@@ -65,6 +69,17 @@ export class Store {
   @action logout = () => {
     this.token = null;
     this.user = null;
+    this.session = null;
+    this.words = [];
+    this.score = 0;
+    this.userScores = [];
+  }
+
+  @action updateScores = async() => {
+    const response = await axios.get(`${apiScores}/${this.user.id}`)
+    if (response.status === 200) {
+      this.userScores = response.data
+    }
   }
 }
 
