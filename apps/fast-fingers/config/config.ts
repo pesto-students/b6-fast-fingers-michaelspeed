@@ -1,4 +1,4 @@
-export const apiHost = 'http://fingerserver.atmiyo.me'
+export const apiHost = 'http://fingerserver.atmiyo.me/api'
 export const tokenHost = 'fastfingers'
 
 // urls

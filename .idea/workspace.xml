@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="updated hosting config">
+    <list default="true" id="354c65d9-a5d0-4f91-9c8a-53050ef0492d" name="Default Changelist" comment="fixed next js config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/fast-fingers/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/fast-fingers/config/config.ts" afterDir="false" />
     </list>
@@ -64,7 +64,7 @@
       <workItem from="1614502391306" duration="7264000" />
       <workItem from="1614514850099" duration="13068000" />
       <workItem from="1614577468791" duration="7247000" />
-      <workItem from="1614598553551" duration="9444000" />
+      <workItem from="1614598553551" duration="9762000" />
     </task>
     <task id="LOCAL-00001" summary="initialize full stack">
       <created>1613639372750</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614609850369</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed next js config">
+      <created>1614610462600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614610462600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +156,7 @@
     <MESSAGE value="updated readme, finished basic functionality of fast fingers" />
     <MESSAGE value="fixed nx build configs" />
     <MESSAGE value="updated hosting config" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated hosting config" />
+    <MESSAGE value="fixed next js config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed next js config" />
   </component>
 </project>
